@@ -1,1 +1,1 @@
-export * from './menu.entities';
+export * from './menu-categories.entities';
