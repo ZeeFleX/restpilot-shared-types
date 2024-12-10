@@ -1,3 +1,4 @@
 export interface IMenuCategory {
-	id: number;
+  id: number;
+  categoryName: string;
 }
