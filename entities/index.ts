@@ -1,3 +1,3 @@
-export * from './menu-categories.entities';
-export * from './user.entities';
-export * from './role.entities';
+export * from "./menu.entities";
+export * from "./companies.entities";
+export * from "./auth.entities";
