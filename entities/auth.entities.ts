@@ -1,4 +1,8 @@
-import { IRole } from './role.entities';
+export interface IRole {
+  id?: string;
+  name: string;
+  description?: string;
+}
 
 export interface IUser {
   id: number;
