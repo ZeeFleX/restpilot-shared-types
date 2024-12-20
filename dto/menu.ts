@@ -1,7 +1,7 @@
 export namespace MenuDTO {
   export namespace Request {
     export interface CreateCategory {
-      categoryName: string;
+      name: string;
     }
   }
   export namespace Response {}
