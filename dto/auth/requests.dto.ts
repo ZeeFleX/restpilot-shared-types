@@ -3,7 +3,7 @@ export interface ISignUpRequestDTO {
   password: string;
 }
 
-export interface ISignInDTO {
+export interface ISignInRequestDTO {
   phone: string;
   password: string;
 }
