@@ -1,1 +1,0 @@
-import { IMenuCategory } from "../../entities";
