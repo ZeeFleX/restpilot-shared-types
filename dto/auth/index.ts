@@ -1,2 +1,1 @@
-export * from "./requests.dto";
-export * from "./responses.dto";
+export * from "./dto";
