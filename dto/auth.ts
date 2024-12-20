@@ -1,4 +1,4 @@
-import { AuthEntities } from 'src/types/shared';
+import { AuthEntities, CompaniesEntities } from 'src/types/shared';
 
 export namespace AuthDTO {
   export namespace Request {
@@ -23,6 +23,10 @@ export namespace AuthDTO {
       accessToken: string;
     }
 
-    export interface SignUp extends Omit<AuthEntities.User, 'password'> {}
+    export interface SignUp extends Partial<AuthEntities.User> {}
+    export interface CompanySignUp {
+      user: SignUp;
+      company: Partial<CompaniesEntities.Company>;
+    }
   }
 }
