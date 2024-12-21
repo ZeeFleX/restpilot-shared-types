@@ -1,5 +1,5 @@
-import { AuthEntities, CompaniesEntities } from "src/types/shared";
-import { Error } from "src/types/shared";
+import { AuthEntities, CompaniesEntities } from 'src/types/shared';
+import { Error } from 'src/types/shared';
 
 export namespace AuthDTO {
   export namespace Request {
@@ -17,6 +17,10 @@ export namespace AuthDTO {
       name: string;
       address: string;
     }
+
+    export interface UserDelete {
+      id: string;
+    }
   }
 
   export namespace Response {
@@ -31,6 +35,10 @@ export namespace AuthDTO {
       user: SignUp;
       company: Partial<CompaniesEntities.Company>;
       error?: Error;
+    }
+
+    export interface UserDelete {
+      user: Partial<AuthEntities.User>;
     }
   }
 }
