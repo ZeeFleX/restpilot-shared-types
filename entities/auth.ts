@@ -6,7 +6,7 @@ export namespace AuthEntities {
   }
 
   export interface User {
-    id: number;
+    id: string;
     phone: string;
     role: Role;
     createdAt: Date;
