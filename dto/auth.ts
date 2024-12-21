@@ -1,5 +1,5 @@
-import { AuthEntities, CompaniesEntities } from 'src/types/shared';
-import { Error } from 'src/types/shared';
+import { AuthEntities, CompaniesEntities } from "../entities";
+import { Error } from "../common";
 
 export namespace AuthDTO {
   export namespace Request {

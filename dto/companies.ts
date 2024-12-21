@@ -1,4 +1,5 @@
-import { CompaniesEntities, Error } from "src/types/shared";
+import { CompaniesEntities } from "../entities";
+import { Error } from "../common";
 
 export namespace CompaniesDTO {
   export namespace Request {
