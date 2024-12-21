@@ -15,6 +15,6 @@ export namespace CompaniesEntities {
     address?: string;
     createdAt: Date;
     updatedAt: Date;
-    restaurants: Restaurant[];
+    restaurants?: Restaurant[];
   }
 }

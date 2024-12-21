@@ -4,5 +4,7 @@ export interface Error {
 }
 
 enum ERROR_CODES {
-  "USER_ALREADY_EXISTS",
+  "USER_NOT_CREATED" = 1000,
+  "USER_ALREADY_EXISTS" = 1001,
+  "COMPANY_NOT_CREATED" = 2000,
 }
