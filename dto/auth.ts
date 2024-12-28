@@ -5,7 +5,12 @@ export namespace AuthDTO {
   export namespace Request {
     export interface SignUp {
       phone: string;
+      email: string;
+      firstname: string;
+      lastname: string;
+      surname?: string;
       password: string;
+      confirmPassword: string;
     }
 
     export interface SignIn {
@@ -14,7 +19,8 @@ export namespace AuthDTO {
     }
 
     export interface CompanySignUp extends SignUp {
-      name: string;
+      companyName: string;
+      inn: string;
       address: string;
     }
 
