@@ -8,6 +8,10 @@ export namespace AuthEntities {
   export interface User {
     id: string;
     phone: string;
+    email: string;
+    firstname: string;
+    lastname: string;
+    surname: string;
     role: Role;
     createdAt: Date;
   }

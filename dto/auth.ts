@@ -32,7 +32,9 @@ export namespace AuthDTO {
 
   export namespace Response {
     export interface SignIn {
-      accessToken: string;
+      accessToken?: string;
+      user?: Partial<AuthEntities.User>;
+      error?: Error;
     }
 
     export interface SignUp extends Partial<AuthEntities.User> {
