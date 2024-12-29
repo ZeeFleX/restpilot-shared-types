@@ -11,8 +11,9 @@ export namespace CompaniesEntities {
 
   export interface Company {
     id: string;
-    name: string;
-    address?: string;
+    companyName: string;
+    address: string;
+    inn: string;
     createdAt: Date;
     updatedAt: Date;
     restaurants?: Restaurant[];

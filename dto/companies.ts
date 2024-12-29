@@ -4,7 +4,12 @@ import { Error } from "../common";
 export namespace CompaniesDTO {
   export namespace Request {
     export interface CreateCompany
-      extends Pick<CompaniesEntities.Company, "name" | "address"> {}
+      extends Pick<
+        CompaniesEntities.Company,
+        "companyName" | "address" | "inn"
+      > {
+      ownerUserId: string;
+    }
   }
   export namespace Response {
     export interface CreateCompany extends CompaniesEntities.Company {

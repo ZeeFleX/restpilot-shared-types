@@ -11,6 +11,7 @@ export namespace AuthDTO {
       surname?: string;
       password: string;
       confirmPassword: string;
+      role?: string;
     }
 
     export interface SignIn {
@@ -38,7 +39,7 @@ export namespace AuthDTO {
       error?: Error;
     }
     export interface CompanySignUp {
-      user: SignUp;
+      user: Partial<Omit<AuthEntities.User, "password">>;
       company: Partial<CompaniesEntities.Company>;
       error?: Error;
     }
