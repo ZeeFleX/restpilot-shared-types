@@ -39,8 +39,8 @@ export namespace AuthDTO {
       error?: Error;
     }
     export interface CompanySignUp {
-      user: Partial<Omit<AuthEntities.User, "password">>;
-      company: Partial<CompaniesEntities.Company>;
+      user?: Partial<Omit<AuthEntities.User, "password">>;
+      company?: Partial<CompaniesEntities.Company>;
       error?: Error;
     }
 
